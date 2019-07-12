@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href= "../Stylesheets/Common.css">
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+<style>
+        img.leftside {
+          float: left;
+        }
+        img.rightside {
+          float: right;
+        }
+        body{
+          background-image: url("../Resources/background.jpg");
+       
+        }
+        </style>
+</head>
+<body>
+
+        <div class="topnav" id="myTopnav">
+                <a href="../Source/Aboutme.html" >About me</a>
+                <a href="../Source/PersonalInformation.html" class="active">Personal Information</a>
+                <a href="../Source/Academics.html">Academics</a>
+                <a href="../Source/ProfessionalAchievements.html">Professional Achievements</a>
+                <a href="../Source/ExtraCurricular.html">Extra Curricular</a>
+                <a href="../Source/Gallery.html">Gallery</a>
+                <a href="../Source/ContactMe.html">Contact Me</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                  <i class="fa fa-bars"></i>
+                </a>
+              </div>
+
+              <img src="../Resources/familycover.png" alt="My Pic" style="width:100%; object-fit: scale-down;">
+
+              <p><img src="../Resources/momandme.PNG" class="leftside" style="width:200px;height:200px;margin-right:30px;">
+                <h1> Anandhi Lakshman.</h1>
+
+                My mom has been my greatest source of strength. She has instilled good thoughts, values and morals by making me understand
+                the importance and the righteousness that comes with those. My mom is an Engineer too and has been an IT industry veteran
+                for 30 years. She was part of Siemens when her career started and moved into IT by joining 
+                Sundaram Infotech Solutions. She steadily progressed to become the Head of South Asia, managing pre-sales, and 
+                delivery of ERP solutions at an organisation called All e Technologies.<br>
+                
+                She is now working as a freelance consultant. She loves carnatic music and enjoys listening to youngsters and 
+                popular artists like Abhishek Raghuram.
+
+                <p style="clear:both;"><img src="../Resources/dadpic.jpg"  class="rightside" style="width:200px;height:200px;margin-left:30px;">
+                       <h1> Dr. V. Lakshman</h1>
+                       <p> I couldn't find a better picture to describe my dad. My dad is a Haematologist (studies and treats 
+                         blood-related issues). He has been working at Apollo Speciality Hospital for the past 25 years. He 
+                         was recently awarded for saving 1000 lives through Bone-Marrow Transplant (BMT). He is a regular blood donor
+                         and enjoys visiting temples and praying.
+                       </p>
+              
+        </body>
+        </html>
