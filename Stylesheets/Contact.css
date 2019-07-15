@@ -1,0 +1,23 @@
+
+table, tr
+{ background-color: black;
+  opacity: 0.7;
+  color: white;
+  padding: 16px 20px;
+  height: 100px;
+  width: 600px;
+  overflow: scroll;
+  text-align: left;
+  font-size:20px;
+ }
+ 
+body {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../Resources/homepic2.jpg");
+
+  background-position:75% 15%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+
