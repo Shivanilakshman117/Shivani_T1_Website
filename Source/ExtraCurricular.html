@@ -1,73 +1,67 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="../Stylesheets/Extracurricular.css">
-<script>
-function myFunction() {
-  var x = document.getElementById("myTopnav");
-  if (x.className === "topnav") {
-    x.className += " responsive";
-  } else {
-    x.className = "topnav";
-  }
-}
-</script>
-<style>
-  body{
-          background-image: url("../Resources/background.jpg");
-       
-        }
-        </style>
-</head>
-<body>
-
-        <div class="topnav" id="myTopnav">
-                <a href="../Source/Aboutme.html" >About me</a>
-                <a href="../Source/PersonalInformation.html">Personal Information</a>
-                <a href="../Source/Academics.html">Academics</a>
-                <a href="../Source/ProfessionalAchievements.html">Professional Achievements</a>
-                <a href="../Source/ExtraCurricular.html" class="active">Extra Curricular</a>
-                <a href="../Source/Gallery.html">Gallery</a>
-                <a href="../Source/ContactMe.html">Contact Me</a>
-                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                  <i class="fa fa-bars"></i>
-                </a>
-              </div>
-
-  <img src="../Resources/extracurricular.jpg" alt="My Pic" class="coverimg">
-   <div class="personalleft">
-        <img src="../Resources/sports.png" alt="hat"  class="center">
-        <div class="introbox">
-                <h1 style="color:darkblue;font-size:40px;">Throwball</h1> 
-                <p style="font-size:30px;">Key Player</p>
-                <p style="text-align:justify;"> My team has won first place in throwball competitions held at our school. I have also taken part 
-                    in running races (200m, 800m) and secured 3rd place at school level.I also play 
-                    badminton and I love cycling. I have recently taken an interest in Surfing too, thanks to my colleagues at work! 
-                </p>
-        </div>
+   <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="../Stylesheets/Common.css">
+      <script>
+         function myFunction() {
+           var x = document.getElementById("myTopnav");
+           if (x.className === "topnav") {
+             x.className += " responsive";
+           } else {
+             x.className = "topnav";
+           }
+         }
+      </script>
+   </head>
+   <body>
+      <div class="topnav" id="myTopnav">
+         <a href="../Source/Aboutme.html" >About me</a>
+         <a href="../Source/PersonalInformation.html">Personal Information</a>
+         <a href="../Source/Academics.html">Academics</a>
+         <a href="../Source/ProfessionalAchievements.html">Professional Achievements</a>
+         <a href="../Source/ExtraCurricular.html" class="active">Extra Curricular</a>
+         <a href="../Source/Gallery.html">Gallery</a>
+         <a href="../Source/ContactMe.html">Contact</a>
+         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+         <i class="fa fa-bars"></i>
+         </a>
       </div>
-      <div class="personalcenter">
-            <img src="../Resources/GC.png" alt="Music"  class="center">
-            <div class="introbox">
-                    <h1 style="color:darkblue;font-size:40px;">Gamecom</h1> 
-                    <p style="font-size:30px;">Vice-President</p>
-                    <p style="text-align:justify;"> My friends and I founded a club called Gamecom at college. We teach students concepts
-                        in Game development, Animation & Multimedia. Within a year, we became the most sought-after club for conduction hands-on workshops
-                     during national tech-fests held at our college. We have conducted 6 major events through our club at college.
-                    </p>
-            </div>
-          </div>
-      <div class="personalright">
-            <img src="../Resources/misc.jpg" alt="Music"  class="center">
-            <div class="introbox">
-                    <h1 style="color:darkblue;font-size:40px;">Miscellaneous</h1> 
-                    <p style="font-size:30px;">Writing | Photography | Social Work</p>
-                    <p style="text-align:justify;"> I occasionally write blogs on current affairs and other topics that I find interesting.
-                        I also have interest in photography. I have taken part in Marathons to spread awareness about Global Warming and 
-                        extinction of certain species of wildlife. 
-                    </p>
-            </div>
-          </div>
-          
+      <img src="../Resources/extracurricular.jpg" alt="My Pic" class="coverimgextra">
+      <div class="projectsandprizes">
+         <img src="../Resources/sports.png" alt="throwball"  class="projectandprizepic">
+         <h1>Throwball</h1>
+         <h3>Key Player</h3>
+         <p > Shivani's team has won first place in throwball competitions held at her school. She has 
+            also taken part 
+            in running races (200m, 800m) and secured 3rd place at school level.Shivani loves 
+            badminton and cycling. She has recently taken an interest in Surfing too and is keen to explore
+            other fun activities.
+         </p>
+      </div>
+      <div class="projectsandprizes">
+         <img src="../Resources/GC.png" alt="GC"  class="projectandprizepic">
+         <h1>Gamecom</h1>
+         <h3>Vice-President</h3>
+         <p > Gamecom is a student club founded by Shivani and her friends at college. Through the club, they
+            teach students concepts in Game development, Animation & Multimedia. 
+            Shivani has conducted many hands-on workshops
+            during national tech-fests held at her college.
+         </p>
+      </div>
+      <div class="projectsandprizes">
+         <img src="../Resources/misc.jpg" alt="Misc"  class="projectandprizepic">
+         <h1 >Miscellaneous</h1>
+         <h3>Writing | Photography | Social Work</h3>
+         <p> Shivani occasionally write blogs on current affairs and other topics that she find interesting.
+            She also has interest in photography.
+            Shivani has taken part in Marathons to spread awareness about Global Warming and 
+            extinction of certain species of wildlife. 
+         </p>
+      </div>
+   </body>
+   <footer>
+      Website developed at Psiog under the guidance of Srinidhi
+   </footer>
+</html>
