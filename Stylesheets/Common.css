@@ -38,7 +38,7 @@ body{
 }
 
 @media screen and (max-width: 600px) {
-  .topnav a:not(:first-child) {display: none;}
+  .topnav a {display: none;}
   .topnav a.icon {
     float: right;
     display: block;
@@ -56,6 +56,11 @@ body{
     float: none;
     display: block;
     text-align: left;
+  }
+
+  .topnav a.active {
+    background-color: #4CAF50;
+    color: white;
   }
 }
 .responsive {
@@ -135,7 +140,7 @@ img.center {
 }
 @media screen and (max-width: 500px) {
   .coverimgprofessional{
-       content:url("../Resources/AcademicAchievement.JPG");
+    content:url("../Resources/profcover.JPG");
        width:100%;
        height:auto;
 
@@ -143,7 +148,8 @@ img.center {
 }
 @media screen and (max-width: 500px) {
   .coverimgacademics{
-       content:url("../Resources/profcover.JPG");
+      
+       content:url("../Resources/AcademicAchievement.JPG");
        width:100%;
        height:auto;
 
@@ -151,7 +157,7 @@ img.center {
 }
 @media screen and (max-width: 500px) {
   .coverimgextra{
-       content:url("../Resources/mebw.JPG");
+       content:url("../Resources/GC.png");
        width:100%;
        height:auto;
 
@@ -203,9 +209,11 @@ img.center {
   }
 
   @media screen and (max-width: 800px) {
-    .projectsandprizes{
+    div.projectsandprizes{
       min-width: 50%;
       height:auto;
+      float:center;
+      clear:both;
   
     }
   }
@@ -217,8 +225,8 @@ img.center {
     border-radius: 50%;
     width: 35%;
     height:30%;
-    max-width: 100%;
-    max-height:auto;
+    max-width: 70%;
+    max-height:40%;
   }
   .split {
     height: 100%;
@@ -229,33 +237,7 @@ img.center {
     overflow-x: hidden;
     padding-top: 20px;
   }
-  
-  .button {
-    background-color: dodgerblue;
-    color: white;
-    border: none;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-    position: center;
-    top: 50%;
-    left: 50%;
-  }
-  input[type=text]{
-    width: 100%;
-    height: 20px;
-    padding: 16px 20px;
-    box-sizing: border-box;
-    border: 2px solid #ccc;
-    border-radius: 4px;
-    background-color: grey;
-    font-size: 16px;
-    resize: none;
-  }
+ 
   h1
   { color:darkblue;
     font-size:2em;
@@ -294,8 +276,7 @@ h3
 
  
 footer 
-{  background-color:black;
- 
+{ background-color:black;
   clear:both;
   display:block;
   color:white;
