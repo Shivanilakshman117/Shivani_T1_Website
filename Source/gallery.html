@@ -1,111 +1,118 @@
-<!DOCTYPE html> 
-<html>
-   <head>
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-      <link rel="stylesheet" href="../Stylesheets/Common.css">
-      <link rel="stylesheet" href="../Stylesheets/gallery.css">
-      <script> 
-         function myFunction() { 
-         
-         var x = document.getElementById("myTopnav"); 
-         
-           if (x.className === "topnav") { 
-         
-            x.className += " responsive"; 
-         
-            } else { 
-         
-           x.className = "topnav"; 
-         
-                  } 
-         
-            }   
-         
-      </script> 
-   </head>
-   <body>
-      <div class="topnav" id="myTopnav"> 
-         <a href="../Source/Aboutme.html">About me</a> 
-         <a href="../Source/PersonalInformation.html">Personal Information</a> 
-         <a href="../Source/Academics.html" >Academics</a> 
-         <a href="../Source/ProfessionalAchievements.html">Professional Achievements</a> 
-         <a href="../Source/ExtraCurricular.html">Extra Curricular</a> 
-         <a href="../Source/Gallery.html" class="active">Gallery</a> 
-         <a href="../Source/ContactMe.html">Contact</a> 
-         <a href="javascript:void(0);" class="icon" onclick="myFunction()"> 
-         <i class="fa fa-bars"></i> 
-         </a> 
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <title> Gallery</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta name="description" content="A few pictures of Shivani ">
+   <meta name="keywords" content="HTML,CSS,Shivani Lakshman, casual pictures">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+   <link rel="stylesheet" href="../Stylesheets/gallery.css">
+
+   <script>
+      function myFunction() {
+
+         var x = document.getElementById("myTopnav");
+
+         if (x.className === "topnav") {
+
+            x.className += " responsive";
+
+         } else {
+
+            x.className = "topnav";
+
+         }
+
+      }
+
+   </script>
+</head>
+
+<body>
+   <div class="topnav" id="myTopnav">
+      <a href="../Source/Aboutme.html">About me</a>
+      <a href="../Source/PersonalInformation.html">Personal Information</a>
+      <a href="../Source/Academics.html">Academics</a>
+      <a href="../Source/ProfessionalAchievements.html">Professional Achievements</a>
+      <a href="../Source/ExtraCurricular.html">Extra Curricular</a>
+      <a href="../Source/Gallery.html" class="active">Gallery</a>
+      <a href="../Source/ContactMe.html">Contact</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+         <i class="fa fa-bars"></i>
+      </a>
+   </div>
+   <div class="slideshow-container">
+      <div class="mySlides fade">
+         <img src="../Resources/meatbeach.JPG" style="width:500px; height:500px; object-fit:cover;">
+         <div class="text">At the beach</div>
       </div>
-      <div class="slideshow-container">
-         <div class="mySlides fade">
-            <img src="../Resources/meatbeach.JPG" style="width:500px; height:500px; object-fit:cover;"> 
-            <div class="text">At the beach</div>
-         </div>
-         <div class="mySlides fade">
-            <img src="../Resources/Singing.JPG" style="width:500px; height:500px; object-fit:cover;"> 
-            <div class="text">Song Time!</div>
-         </div>
-         <div class="mySlides fade">
-            <img src="../Resources/candid.JPG" style="width:500px; height:500px; object-fit:cover;"> 
-            <div class="text">Candid</div>
-         </div>
-         <div class="mySlides fade">
-            <img src="../Resources/doggo.JPG" style="width:500px; height:500px; object-fit:cover;"> 
-            <div class="text">Doggo</div>
-         </div>
-         <div class="mySlides fade">
-            <img src="../Resources/AcademicAchievement.JPG" style="width:500px; height:500px; object-fit:cover;"> 
-            <div class="text">Awards and Accolades</div>
-         </div>
+      <div class="mySlides fade">
+         <img src="../Resources/Singing.JPG" style="width:500px; height:500px; object-fit:cover;">
+         <div class="text">Song Time!</div>
       </div>
-      <div style="text-align:center"> 
-         <span class="dot"></span>  
-         <span class="dot"></span>  
-         <span class="dot"></span>  
-         <span class="dot"></span> 
-         <span class="dot"></span> 
+      <div class="mySlides fade">
+         <img src="../Resources/candid.JPG" style="width:500px; height:500px; object-fit:cover;">
+         <div class="text">Candid</div>
       </div>
-      <script> 
-         var slideIndex = 0; 
-         
-         showSlides(); 
-         
-          function showSlides() { 
-         
-          var i; 
-         
-         var slides = document.getElementsByClassName("mySlides"); 
-         
-         var dots = document.getElementsByClassName("dot"); 
-         
-         for (i = 0; i < slides.length; i++) { 
-         
-         slides[i].style.display = "none";  
-         
-          } 
-         
-         slideIndex++; 
-         
-          if (slideIndex > slides.length) {slideIndex = 1}  
-         
-         for (i = 0; i < dots.length; i++) { 
-         
-         dots[i].className = dots[i].className.replace(" active", ""); 
-         
-          } 
-         
-          slides[slideIndex-1].style.display = "block";  
-         
-          dots[slideIndex-1].className += " active"; 
-         
-          setTimeout(showSlides, 3000); // Change image every 3 seconds 
-         
-         } 
-         
-      </script> 
-   </body>
+      <div class="mySlides fade">
+         <img src="../Resources/doggo.JPG" style="width:500px; height:500px; object-fit:cover;">
+         <div class="text">Doggo</div>
+      </div>
+      <div class="mySlides fade">
+         <img src="../Resources/AcademicAchievement.JPG" style="width:500px; height:500px; object-fit:cover;">
+         <div class="text">Awards and Accolades</div>
+      </div>
+   </div>
+   <div style="text-align:center">
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+   </div>
+   <script>
+      var slideIndex = 0;
+
+      showSlides();
+
+      function showSlides() {
+
+         var i;
+
+         var slides = document.getElementsByClassName("mySlides");
+
+         var dots = document.getElementsByClassName("dot");
+
+         for (i = 0; i < slides.length; i++) {
+
+            slides[i].style.display = "none";
+
+         }
+
+         slideIndex++;
+
+         if (slideIndex > slides.length) { slideIndex = 1 }
+
+         for (i = 0; i < dots.length; i++) {
+
+            dots[i].className = dots[i].className.replace(" active", "");
+
+         }
+
+         slides[slideIndex - 1].style.display = "block";
+
+         dots[slideIndex - 1].className += " active";
+
+         setTimeout(showSlides, 3000); // Change image every 3 seconds 
+
+      }
+
+   </script>
    <footer>
       Website developed at Psiog under the guidance of Srinidhi
    </footer>
+</body>
+
 </html>
