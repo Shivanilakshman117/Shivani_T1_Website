@@ -1,4 +1,75 @@
 
+body {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../Resources/homepic2.jpg");
+  background-position:75% 15%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  margin:0;
+  font-family: Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: orange;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+
+  .topnav a.active {
+    background-color: #4CAF50;
+    color: white;
+  }
+}
+.responsive {
+  width: 100%;
+  height: auto;
+}
+
 table, tr
 { background-color: black;
   opacity: 0.7;
@@ -9,15 +80,97 @@ table, tr
   overflow: scroll;
   text-align: left;
   font-size:20px;
- }
- 
-body {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../Resources/homepic2.jpg");
-
-  background-position:75% 15%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
+  max-width: 100%;
+  min-height:auto;
 }
+
+ input[type=text]
+ {
+  width: 100%;
+  height: 20px;
+  padding: 16px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: grey;
+  font-size: 16px;
+  resize: none;
+}
+
+.button 
+{
+  background-color: dodgerblue;
+  color: white;
+  border: none;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  position: center;
+  top: 50%;
+  left: 50%;
+}
+
+
+ @media screen and (max-width: 600px) 
+{
+  table, tr
+  { background-color: black;
+    opacity: 0.7;
+    color: white;
+    overflow: hidden;
+    text-align: left;
+    font-size:20px;
+    max-width: auto;
+    min-height:auto;
+   }
+
+   .button {
+    background-color: dodgerblue;
+    color: white;
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    margin: auto;
+    cursor: pointer;
+    position: center;
+    top: 50%;
+    left: 50%;
+  }
+
+  input[type=text]{
+    width: 60%;
+    height: 20px;
+   
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: grey;
+    font-size: 16px;
+    resize: none;
+  }
+  
+}
+  
+footer 
+{ background-color:black;
+  clear:both;
+  display:block;
+  color:white;
+  font-size:1em;
+  text-align:center;
+  bottom:0;
+  padding: 0.5em;
+  width: 100%;
+  height: 2.5em;
+}  
+
+  
 
 
