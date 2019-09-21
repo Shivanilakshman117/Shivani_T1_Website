@@ -209,7 +209,7 @@ img.center {
   }
 
   @media screen and (max-width: 800px) {
-    .projectsandprizes{
+    div.projectsandprizes{
       min-width: 50%;
       height:auto;
       float:center;
@@ -228,7 +228,6 @@ img.center {
     max-width: 70%;
     max-height:40%;
   }
-
  
   h1
   { color:darkblue;
