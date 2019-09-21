@@ -38,75 +38,71 @@
          <i class="fa fa-bars"></i> 
          </a> 
       </div>
-      <div class="slideshow-container">
-         <div class="mySlides fade">
-            <img src="../Resources/meatbeach.JPG" style="width:500px; height:500px; object-fit:cover;"> 
-            <div class="text">At the beach</div>
-         </div>
-         <div class="mySlides fade">
-            <img src="../Resources/Singing.JPG" style="width:500px; height:500px; object-fit:cover;"> 
-            <div class="text">Song Time!</div>
-         </div>
-         <div class="mySlides fade">
-            <img src="../Resources/candid.JPG" style="width:500px; height:500px; object-fit:cover;"> 
-            <div class="text">Candid</div>
-         </div>
-         <div class="mySlides fade">
-            <img src="../Resources/doggo.JPG" style="width:500px; height:500px; object-fit:cover;"> 
-            <div class="text">Doggo</div>
-         </div>
-         <div class="mySlides fade">
-            <img src="../Resources/AcademicAchievement.JPG" style="width:500px; height:500px; object-fit:cover;"> 
-            <div class="text">Awards and Accolades</div>
-         </div>
+      <div class="mySlides fade">
+         <img src="../Resources/Singing.JPG" style="width:500px; height:500px; object-fit:cover;">
+         <div class="text">Song Time!</div>
       </div>
-      <div style="text-align:center"> 
-         <span class="dot"></span>  
-         <span class="dot"></span>  
-         <span class="dot"></span>  
-         <span class="dot"></span> 
-         <span class="dot"></span> 
+      <div class="mySlides fade">
+         <img src="../Resources/candid.JPG" style="width:500px; height:500px; object-fit:cover;">
+         <div class="text">Candid</div>
       </div>
-      <script> 
-         var slideIndex = 0; 
-         
-         showSlides(); 
-         
-          function showSlides() { 
-         
-          var i; 
-         
-         var slides = document.getElementsByClassName("mySlides"); 
-         
-         var dots = document.getElementsByClassName("dot"); 
-         
-         for (i = 0; i < slides.length; i++) { 
-         
-         slides[i].style.display = "none";  
-         
-          } 
-         
-         slideIndex++; 
-         
-          if (slideIndex > slides.length) {slideIndex = 1}  
-         
-         for (i = 0; i < dots.length; i++) { 
-         
-         dots[i].className = dots[i].className.replace(" active", ""); 
-         
-          } 
-         
-          slides[slideIndex-1].style.display = "block";  
-         
-          dots[slideIndex-1].className += " active"; 
-         
-          setTimeout(showSlides, 3000); // Change image every 3 seconds 
-         
-         } 
-         
-      </script> 
-   </body>
+      <div class="mySlides fade">
+         <img src="../Resources/doggo.JPG" style="width:500px; height:500px; object-fit:cover;">
+         <div class="text">Doggo</div>
+      </div>
+      <div class="mySlides fade">
+         <img src="../Resources/AcademicAchievement.JPG" style="width:500px; height:500px; object-fit:cover;">
+         <div class="text">Awards and Accolades</div>
+      </div>
+   </div>
+   <div style="text-align:center">
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+   </div>
+   <script>
+      var slideIndex = 0;
+
+      showSlides();
+
+      function showSlides() {
+
+         var i;
+
+         var slides = document.getElementsByClassName("mySlides");
+
+         var dots = document.getElementsByClassName("dot");
+
+         for (i = 0; i < slides.length; i++) {
+
+            slides[i].style.display = "none";
+
+         }
+
+         slideIndex++;
+
+         if (slideIndex > slides.length) { slideIndex = 1 }
+
+         for (i = 0; i < dots.length; i++) {
+
+            dots[i].className = dots[i].className.replace(" active", "");
+
+         }
+
+         slides[slideIndex - 1].style.display = "block";
+
+         dots[slideIndex - 1].className += " active";
+
+         setTimeout(showSlides, 3000); // Change image every 3 seconds 
+
+      }
+
+   </script>
    <footer>
       Website developed at Psiog under the guidance of Srinidhi
    </footer>
+</body>
+
 </html>

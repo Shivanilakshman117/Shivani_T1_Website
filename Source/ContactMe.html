@@ -1,62 +1,68 @@
 <!DOCTYPE html>
-<html>
-   <head>
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-      <link rel="stylesheet" href="../Stylesheets/Common.css">
-      <link rel="stylesheet" href="../Stylesheets/Contact.css">
-      <script>
-         function myFunction() {
-           var x = document.getElementById("myTopnav");
-             if (x.className === "topnav") {
-              x.className += " responsive";
-              } else {
-              x.className = "topnav";
-                 }
-           }
-      </script>
-   </head>
-   <body>
-      <div class="topnav" id="myTopnav">
-         <a href="../Source/Aboutme.html" >About me</a>
-         <a href="../Source/PersonalInformation.html">Personal Information</a>
-         <a href="../Source/Academics.html">Academics</a>
-         <a href="../Source/ProfessionalAchievements.html">Professional Achievements</a>
-         <a href="../Source/ExtraCurricular.html">Extra Curricular</a>
-         <a href="../Source/Gallery.html">Gallery</a>
-         <a href="../Source/ContactMe.html" class="active">Contact</a>
-         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+<html lang="en">
+
+<head >
+   <title> Contact Section </title>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta name="description" content="Contact Page ">
+   <meta name="keywords" content="HTML,CSS,Shivani Lakshman,Contact">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   
+   <link rel="stylesheet" href="../Stylesheets/Contact.css">
+   <script>
+      function myFunction() {
+         var x = document.getElementById("myTopnav");
+         if (x.className === "topnav") {
+            x.className += " responsive";
+         } else {
+            x.className = "topnav";
+         }
+      }
+   </script>
+</head>
+
+<body>
+   <div class="topnav" id="myTopnav">
+      <a href="../Source/Aboutme.html">About me</a>
+      <a href="../Source/PersonalInformation.html">Personal Information</a>
+      <a href="../Source/Academics.html">Academics</a>
+      <a href="../Source/ProfessionalAchievements.html">Professional Achievements</a>
+      <a href="../Source/ExtraCurricular.html">Extra Curricular</a>
+      <a href="../Source/Gallery.html">Gallery</a>
+      <a href="../Source/ContactMe.html" class="active">Contact</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
          <i class="fa fa-bars"></i>
-         </a>
-      </div>
-      <table >
+      </a>
+   </div>
+   <table>
+      <tr>
+         <td>Reach out to Shivani!</td>
+      </tr>
+      <tr>
+         <td>Email ID : </td>
+         <td> sl@sl.com </td>
+
+      </tr>
+      <tr>
+         <td>Mobile: </td>
+         <td> +91 7845129635 </td>
+
+      </tr>
+      <form method="POST">
          <tr>
-            <td>Reach out to Shivani!</td>
+            <td>Drop in your Email ID: </td>
+            <td><input type="text" name="emailid"></td>
          </tr>
          <tr>
-            <td>Email ID : </td>
-            <td> sl@sl.com </td>
-            <br>
+            <td>
+               <input type="submit" value="Go" class="button">
+            </td>
          </tr>
-         <tr>
-            <td>Mobile: </td>
-            <td> +91 7845129635 </td>
-            <br>
-         </tr>
-         <form method="POST">
-            <tr>
-               <td>Drop in your Email ID: </td>
-               <td><input type="text" name="emailid"></td>
-            </tr>
-            <tr>
-               <td>
-                  <input type="submit" value="Go" class="button">
-               </td>
-            </tr>
-         </form>
-      </table>
-   </body>
+      </form>
+   </table>
    <footer>
       Website developed at Psiog under the guidance of Srinidhi
    </footer>
+</body>
+
 </html>

@@ -1,4 +1,73 @@
+body{
+  margin:0;
+  background-image: url("../Resources/background.jpg");
+  background-repeat: no-repeat;
+  background-size:cover;
+  font-family: Helvetica, sans-serif;
 
+}
+
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: orange;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+
+  .topnav a.active {
+    background-color: #4CAF50;
+    color: white;
+  }
+}
+.responsive {
+  width: 100%;
+  height: auto;
+}
 * {box-sizing: border-box;}
 
 .mySlides {display: none;}
@@ -9,6 +78,7 @@ img {vertical-align: middle;}
   max-width: 800px;
   max-height:600px;
   position: relative;
+  padding:2em;
   margin: auto;
   width: 500px;
 }
@@ -18,8 +88,7 @@ img {vertical-align: middle;}
   color: #f2f2f2;
   font-size: 30px;
   padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
+  position: relative;
   width: 500px;
   text-align: center;
   background-color: black;
@@ -31,15 +100,16 @@ img {vertical-align: middle;}
 .dot {
   height: 15px;
   width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
+  margin:auto;
+  background-color:gray;
   border-radius: 50%;
   display: inline-block;
+  position: relative;
   transition: background-color 0.6s ease;
 }
 
 .active {
-  background-color: #717171;
+  background-color:black;
 }
 
 /* Fading animation */
@@ -64,3 +134,16 @@ img {vertical-align: middle;}
 @media only screen and (max-width: 300px) {
   .text {font-size: 11px}
 }
+
+footer 
+{ background-color:black;
+  clear:both;
+  display:block;
+  color:white;
+  font-size:1em;
+  text-align:center;
+  bottom:0;
+  padding: 0.5em;
+  width: 100%;
+  height: 2.5em;
+}  

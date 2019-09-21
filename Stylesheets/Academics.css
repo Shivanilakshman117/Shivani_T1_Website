@@ -8,6 +8,7 @@ body{
   
   body {
    
+    margin:0;
     font-family: Helvetica, sans-serif;
     background-image: url("../Resources/background.jpg");
   }
