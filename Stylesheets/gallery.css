@@ -70,7 +70,9 @@ body{
 }
 * {box-sizing: border-box;}
 
-.mySlides {display: none;}
+.mySlides {display: none;
+  margin-left: auto;
+  margin-right:auto;}
 img {vertical-align: middle;}
 
 /* Slideshow container */
@@ -79,7 +81,8 @@ img {vertical-align: middle;}
   max-height:600px;
   position: relative;
   padding:2em;
-  margin: auto;
+  margin-left: auto;
+  margin-right:auto;
   width: 500px;
 }
 
@@ -95,11 +98,17 @@ img {vertical-align: middle;}
   opacity:0.6;
 }
 
-
+.slideshowimage
+{
+  width:500px; 
+  height:500px; 
+  object-fit:cover;
+}
 /* The dots/bullets/indicators */
 .dot {
   height: 15px;
   width: 15px;
+  
   margin:auto;
   background-color:gray;
   border-radius: 50%;
